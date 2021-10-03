@@ -41,20 +41,7 @@ const Home=(props)=>{
 					
 					<div className="" style={{position:'absolute',top:'0',width:'100%'}}>
 					<div>
-<img src={ background } style={{height: 'max(550px,100vh)',
-  
-  /* Full height */
-  width: '100%',
-  position: 'absolute',
-  top:'0',
-  backgroundSize: 'cover',
-  overflow: 'hidden',
-
-  /* Center and scale the image nicely */
-  backgroundPosition: 'center top',
-  backgroundRepeat: 'no-repeat,repeat',
-  
-  zIndex: '-1'}}
+<img src={ background } 
 	/>
           
 							
