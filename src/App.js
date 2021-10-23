@@ -58,9 +58,9 @@ const App=()=>{
 					<Route exact path="/products-category/forensic-science/page:page" component={FSProducts}/>
 					<Route exact path="/products-category/healthcare-nutrition/page:page" component={HNProducts}/>
 					<Route exact path="/products-category/human-anatomy-models/page:page" component={HAProducts}/>
-					<Route  path="/products/:id" component={ProductDetails}/>
+					<Route exact path="/products/:id" component={ProductDetails}/>
 					
-					
+					<Route component={Error}/>
 				</Switch>
 				</ScrollToTop>
 				<Footer  style={{bottom:'0%'}}/>

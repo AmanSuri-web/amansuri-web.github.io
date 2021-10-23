@@ -40,7 +40,7 @@ const Home=(props)=>{
 
 	return (<>
 					<Helmet>
-        <title>Home Page</title>
+        <title>Galaxy Informatics</title>
         <meta name="description" content="Galaxy Informatics" />
     			</Helmet>
 					<div className="" style={{position:'absolute',top:'0',width:'100%'}}>

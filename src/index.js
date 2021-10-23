@@ -2,15 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "./index.css";
 import App from './App.js';
-import {HashRouter} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
+import { hydrate, render } from "react-dom";
 
-
-ReactDOM.render(
-				<>
-				<HashRouter>
+const APP = (<>
+				<BrowserRouter>
 				<App/>
-				</HashRouter>
-				</>, 
-	document.getElementById("root") ); // this is always fixed and it points to the index.html file
+				</BrowserRouter>
+				</>);
 
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+  hydrate(APP, rootElement);
+} else {
+  render(APP, rootElement);
+}
 
