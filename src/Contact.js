@@ -1,4 +1,6 @@
 import React, {useState}from 'react'
+import {Helmet} from "react-helmet";
+
 import emailjs from "emailjs-com"
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';
@@ -52,6 +54,15 @@ const Contact=()=>{
 	}
 	
 	return(<>
+		<Helmet>
+        <title>Contact Page</title>
+        <meta name="description" content="For Medical, Surgical & Laboratory Products, Feel free to contact us anytime. SK Suri 
+
+GALAXY INFORMATICS ( INDIA )
+
+105, Avinash Mansion , 82/3 Joshi Road
+Karol Bagh, New Delhi-110005 , India" />
+    			</Helmet>
 	<div style={{backgroundColor:'black',color:'white'}}>
 		<div className=" text-center" style={{marginTop:'-4px'}}>
 		<p style={{color:'rgb(150,150,150)'}}>We would love to hear from you!</p>

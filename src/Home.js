@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import {Helmet} from "react-helmet";
 import background from './backgroundImage.jpg'
 import "./index.css";
 import IconButton from "@material-ui/core/IconButton";
@@ -38,7 +39,10 @@ const Home=(props)=>{
 // Teach Autosuggest how to calculate suggestions for any given input value.
 
 	return (<>
-					
+					<Helmet>
+        <title>Home Page</title>
+        <meta name="description" content="Galaxy Informatics" />
+    			</Helmet>
 					<div className="" style={{position:'absolute',top:'0',width:'100%'}}>
 					<div>
 <img src={ background } style={{height: 'max(550px,100vh)',

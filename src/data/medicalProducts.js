@@ -2,7 +2,7 @@ import React ,{useState,useEffect} from 'react'
 import Card from './../Card.js'
 import MS from './Medical&surgical.js'
 import { makeStyles } from '@material-ui/core/styles';
-
+import {Helmet} from "react-helmet";
 
 import { useHistory ,NavLink} from "react-router-dom";
 import "./../index.css";
@@ -54,6 +54,10 @@ const Products=(props)=>{
 
     
 	return (<>
+	<Helmet>
+        <title>Medical products</title>
+        <meta name="description" content="Galaxy Informatics Medical products" />
+    			</Helmet>
 		<div className="my-5">
 		
 			

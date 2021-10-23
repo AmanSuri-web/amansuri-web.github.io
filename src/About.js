@@ -1,8 +1,13 @@
 import React from 'react'
+import {Helmet} from "react-helmet";
 
 const About=()=>{
 	const year = new Date().getFullYear();
 	return (<>
+		<Helmet>
+        <title>About Page</title>
+        <meta name="description" content="GALAXY INFORMATICS (INDIA) was Established in 1987 and got registered in 1988 September after serving the education community for about 40 years and today we manufacture , export ,Import trade wide range of products in the field of Anthropology, Physiology, Evaluation, Nutrition, Forensic, Healthcare, Medical, Nursing care, Surgical Devices and other laboratory products." />
+    			</Helmet>
 		<div style={{backgroundColor:'black',marginTop:'-4px'}}>
 		<div className='ml-20 mr-20' style={{textAlign:'',marginLeft:'20%',marginRight:'20%',marginTop:'0px'}}>
 		<h1 style={{textAlign:'center',marginBottom:'50px',color:'white'}}>ABOUT US</h1>

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
 import "./index.css";
 import { NavLink } from "react-router-dom";
 import Sdata from './Sdata.js'
@@ -28,7 +29,10 @@ function ProductDetails(props){
   }
 	return (<>
     
-    
+    <Helmet>
+        <title>Product Page</title>
+        <meta name="description" content="Galaxy Informatics" />
+          </Helmet>
 		<div className="details" >
     <div className="site_container">
     
