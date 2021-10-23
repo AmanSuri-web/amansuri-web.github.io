@@ -3,18 +3,14 @@ import ReactDOM from 'react-dom';
 import "./index.css";
 import App from './App.js';
 import {BrowserRouter} from "react-router-dom";
-import { hydrate, render } from "react-dom";
 
-const APP = (<>
+
+ReactDOM.render(
+				<>
 				<BrowserRouter>
 				<App/>
 				</BrowserRouter>
-				</>);
+				</>, 
+	document.getElementById("root") ); // this is always fixed and it points to the index.html file
 
-const rootElement = document.getElementById("root");
-if (rootElement.hasChildNodes()) {
-  hydrate(APP, rootElement);
-} else {
-  render(APP, rootElement);
-}
 
