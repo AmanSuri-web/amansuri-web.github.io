@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.0a7d7629.chunk.css",
-    "main.js": "/static/js/main.e19f9c02.chunk.js",
-    "main.js.map": "/static/js/main.e19f9c02.chunk.js.map",
+    "main.js": "/static/js/main.b046364b.chunk.js",
+    "main.js.map": "/static/js/main.b046364b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.88521322.js",
     "runtime-main.js.map": "/static/js/runtime-main.88521322.js.map",
     "static/css/2.2f9ba80b.chunk.css": "/static/css/2.2f9ba80b.chunk.css",
-    "static/js/2.793401f5.chunk.js": "/static/js/2.793401f5.chunk.js",
-    "static/js/2.793401f5.chunk.js.map": "/static/js/2.793401f5.chunk.js.map",
+    "static/js/2.4425acbe.chunk.js": "/static/js/2.4425acbe.chunk.js",
+    "static/js/2.4425acbe.chunk.js.map": "/static/js/2.4425acbe.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.2f9ba80b.chunk.css.map": "/static/css/2.2f9ba80b.chunk.css.map",
     "static/css/main.0a7d7629.chunk.css.map": "/static/css/main.0a7d7629.chunk.css.map",
-    "static/js/2.793401f5.chunk.js.LICENSE.txt": "/static/js/2.793401f5.chunk.js.LICENSE.txt",
+    "static/js/2.4425acbe.chunk.js.LICENSE.txt": "/static/js/2.4425acbe.chunk.js.LICENSE.txt",
     "static/media/Galaxy CE Certificate products Annexure.4e9283ff.jpg": "/static/media/Galaxy CE Certificate products Annexure.4e9283ff.jpg",
     "static/media/Galaxy CE Certificate.ef81eb7b.jpg": "/static/media/Galaxy CE Certificate.ef81eb7b.jpg",
     "static/media/Galaxy GMP Certificate.7592210d.jpg": "/static/media/Galaxy GMP Certificate.7592210d.jpg",
     "static/media/Galaxy ISO 14001 certificate.5e8bd6d1.jpg": "/static/media/Galaxy ISO 14001 certificate.5e8bd6d1.jpg",
     "static/media/Galaxy ISO Certificate.4d303025.jpg": "/static/media/Galaxy ISO Certificate.4d303025.jpg",
-    "static/media/anthro.398d9e02.jpg": "/static/media/anthro.398d9e02.jpg",
+    "static/media/anthro.b5185ae0.jpg": "/static/media/anthro.b5185ae0.jpg",
     "static/media/index.css": "/static/media/backgroundImage.bd96623c.jpg",
     "static/media/forensic.b9ef7562.jpg": "/static/media/forensic.b9ef7562.jpg",
     "static/media/galaxyLogo.7daa8c98.svg": "/static/media/galaxyLogo.7daa8c98.svg",
@@ -207,7 +207,7 @@
     "static/media/i332.3530ea4b.jpg": "/static/media/i332.3530ea4b.jpg",
     "static/media/i34.6ac6315f.jpg": "/static/media/i34.6ac6315f.jpg",
     "static/media/i37.b7936ed1.jpg": "/static/media/i37.b7936ed1.jpg",
-    "static/media/i4.3a999bd0.png": "/static/media/i4.3a999bd0.png",
+    "static/media/i4.adb36afe.png": "/static/media/i4.adb36afe.png",
     "static/media/i4.d5224923.jpg": "/static/media/i4.d5224923.jpg",
     "static/media/i40.3fa5372a.jpg": "/static/media/i40.3fa5372a.jpg",
     "static/media/i41.2fe2cf06.jpg": "/static/media/i41.2fe2cf06.jpg",
@@ -256,15 +256,15 @@
     "static/media/i98.da097ed2.jpg": "/static/media/i98.da097ed2.jpg",
     "static/media/i99.7fd2c3a2.jpg": "/static/media/i99.7fd2c3a2.jpg",
     "static/media/left-arrow.bb288448.svg": "/static/media/left-arrow.bb288448.svg",
-    "static/media/medical.2aa69e05.jpg": "/static/media/medical.2aa69e05.jpg",
+    "static/media/medical.6832f6da.jpg": "/static/media/medical.6832f6da.jpg",
     "static/media/psy.7d6d6746.jpg": "/static/media/psy.7d6d6746.jpg",
     "static/media/right-arrow.1884d75a.svg": "/static/media/right-arrow.1884d75a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.88521322.js",
     "static/css/2.2f9ba80b.chunk.css",
-    "static/js/2.793401f5.chunk.js",
+    "static/js/2.4425acbe.chunk.js",
     "static/css/main.0a7d7629.chunk.css",
-    "static/js/main.e19f9c02.chunk.js"
+    "static/js/main.b046364b.chunk.js"
   ]
 }
