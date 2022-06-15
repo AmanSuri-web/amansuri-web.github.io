@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.0a7d7629.chunk.css",
-    "main.js": "/static/js/main.f4c7fbf9.chunk.js",
-    "main.js.map": "/static/js/main.f4c7fbf9.chunk.js.map",
+    "main.js": "/static/js/main.c7068f88.chunk.js",
+    "main.js.map": "/static/js/main.c7068f88.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.88521322.js",
     "runtime-main.js.map": "/static/js/runtime-main.88521322.js.map",
     "static/css/2.2f9ba80b.chunk.css": "/static/css/2.2f9ba80b.chunk.css",
-    "static/js/2.1f75bd4a.chunk.js": "/static/js/2.1f75bd4a.chunk.js",
-    "static/js/2.1f75bd4a.chunk.js.map": "/static/js/2.1f75bd4a.chunk.js.map",
+    "static/js/2.d0b0d42e.chunk.js": "/static/js/2.d0b0d42e.chunk.js",
+    "static/js/2.d0b0d42e.chunk.js.map": "/static/js/2.d0b0d42e.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.2f9ba80b.chunk.css.map": "/static/css/2.2f9ba80b.chunk.css.map",
     "static/css/main.0a7d7629.chunk.css.map": "/static/css/main.0a7d7629.chunk.css.map",
-    "static/js/2.1f75bd4a.chunk.js.LICENSE.txt": "/static/js/2.1f75bd4a.chunk.js.LICENSE.txt",
+    "static/js/2.d0b0d42e.chunk.js.LICENSE.txt": "/static/js/2.d0b0d42e.chunk.js.LICENSE.txt",
     "static/media/Galaxy CE Certificate products Annexure.4e9283ff.jpg": "/static/media/Galaxy CE Certificate products Annexure.4e9283ff.jpg",
     "static/media/Galaxy CE Certificate.ef81eb7b.jpg": "/static/media/Galaxy CE Certificate.ef81eb7b.jpg",
     "static/media/Galaxy GMP Certificate.7592210d.jpg": "/static/media/Galaxy GMP Certificate.7592210d.jpg",
@@ -263,8 +263,8 @@
   "entrypoints": [
     "static/js/runtime-main.88521322.js",
     "static/css/2.2f9ba80b.chunk.css",
-    "static/js/2.1f75bd4a.chunk.js",
+    "static/js/2.d0b0d42e.chunk.js",
     "static/css/main.0a7d7629.chunk.css",
-    "static/js/main.f4c7fbf9.chunk.js"
+    "static/js/main.c7068f88.chunk.js"
   ]
 }
