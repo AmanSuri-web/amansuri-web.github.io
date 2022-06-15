@@ -42,6 +42,7 @@ const App=()=>{
 	<Navigation/>
 			 
 			 <ScrollToTop>
+				
 				<Switch>
 					<Route exact path="/" component={Home}/>
 
@@ -60,6 +61,7 @@ const App=()=>{
 					<Route exact path="/products-category/human-anatomy-models/page:page" component={HAProducts}/>
 					<Route  path="/products/:id" component={ProductDetails}/>
 					<Route path="*" component={Error}/>
+					
 					
 				</Switch>
 				</ScrollToTop>
