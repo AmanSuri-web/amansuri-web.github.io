@@ -52,7 +52,7 @@ const Contact=()=>{
 	}
 	
 	return(<>
-	<div style={{backgroundColor:'black',color:'white'}}>
+	<div style={{backgroundColor:'black',color:'white',height:'100%'}}>
 		<div className=" text-center" style={{marginTop:'-4px'}}>
 		<p style={{color:'rgb(150,150,150)'}}>We would love to hear from you!</p>
 			<h1 className='text-center' style={{marginTop:'-10px'}}>Contact Us</h1>
@@ -104,7 +104,7 @@ const Contact=()=>{
 				</div>
 			</div>
 		</div>
-		<footer className=" bg-dark text-center" style={{marginTop:'100px'}}>
+		<footer style={{bottom: '0'}} className=" bg-dark text-center" style={{marginTop:'100px'}}>
     <p style={{color:'white'}}>© {year} Galaxy Informatics</p>
     </footer>
 		</div>

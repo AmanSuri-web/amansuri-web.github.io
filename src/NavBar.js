@@ -140,7 +140,6 @@ const navColor=()=>{
   settest(!test)
   
 }
-console.log(test)
 const classes = useStyles();
 
 const [expanded, setExpanded] = useState(false)

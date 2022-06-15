@@ -3,7 +3,7 @@ import React from 'react'
 const About=()=>{
 	const year = new Date().getFullYear();
 	return (<>
-		<div style={{backgroundColor:'black',marginTop:'-4px'}}>
+		<div style={{backgroundColor:'black',marginTop:'-4px',height:'100%'}}>
 		<div className='ml-20 mr-20' style={{textAlign:'',marginLeft:'20%',marginRight:'20%',marginTop:'0px'}}>
 		<h1 style={{textAlign:'center',marginBottom:'50px',color:'white'}}>ABOUT US</h1>
 		<p style={{color:'white'}}>A Dream! A Hope! A Wish! This is where all good things start!<br/>
