@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import "./index.css";
 import { NavLink } from "react-router-dom";
 import Sdata from './Sdata.js'
@@ -7,6 +7,10 @@ function ProductDetails(props){
   
   
   const num=props.match.params.id;
+  const t=Sdata[num].title;
+  useEffect(() => {
+   document.title = t
+}, []);
   var l;
   if(Sdata[num].link=="MEDICAL & SURGICAL PRODUCTS"){
     l='medical-surgical';

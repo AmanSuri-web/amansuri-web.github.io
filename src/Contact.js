@@ -1,4 +1,4 @@
-import React, {useState}from 'react'
+import React, {useState,useEffect}from 'react'
 import emailjs from "emailjs-com"
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';
@@ -6,7 +6,11 @@ import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import Home from './Home.js'
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
+
 const Contact=()=>{
+	useEffect(() => {
+   document.title = "Contact Us"
+}, []);
 	const year = new Date().getFullYear();
 	const [data,setData]=useState({
 		fullname : '' ,

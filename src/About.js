@@ -1,6 +1,9 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 const About=()=>{
+	useEffect(() => {
+   document.title = "About Us"
+}, []);
 	const year = new Date().getFullYear();
 	return (<>
 		<div style={{backgroundColor:'black',marginTop:'-4px',height:'100%'}}>

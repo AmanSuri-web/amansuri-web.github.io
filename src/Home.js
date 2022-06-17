@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import background from './backgroundImage.jpg'
 import "./index.css";
 import IconButton from "@material-ui/core/IconButton";
@@ -34,7 +34,9 @@ import Carousel from './Carousel.js'
 // render
 const year = new Date().getFullYear();
 const Home=(props)=>{
-	
+	useEffect(() => {
+   document.title = "Galaxy Informatics"
+}, []);
 // Teach Autosuggest how to calculate suggestions for any given input value.
 
 	return (<>

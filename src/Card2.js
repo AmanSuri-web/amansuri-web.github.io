@@ -12,7 +12,7 @@ function Card2(props){
     <NavLink to={`/${props.id}`} className="" style={{margin:'0 auto',
     display:'',textDecoration: 'none'}}>
     <div className="card " style={{border:'none',width:'',marginTop:'40px'}}>
-      <img src={props.imgsrc} className="card-img-top" style={{height:'300px',display: 'block',marginRight:'auto',marginLeft:'auto'}} alt="..."/>
+      <img src={props.imgsrc} className="card-img-top" style={{height:'300px',display: 'block',marginRight:'auto',marginLeft:'auto'}} alt={props.title}/>
       <div className="card-body" style={{alignItems:'center'}}>
         <h5 className="card-title" style={{color:"black"}} >{props.title} ({props.num})</h5>
          </div>
