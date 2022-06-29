@@ -80,7 +80,7 @@ const Home=(props)=>{
 			<div >
 		<div className="col">
     
-    <a href='/products1' style={{textDecoration:'none'}}>
+    <NavLink to='/products1' style={{textDecoration:'none'}}>
     <div className="card " style={{border:'none',width:'',marginTop:'40px'}}>
     <Carousel/>
       <div className="card-body" style={{alignItems:'center'}}>
@@ -90,7 +90,7 @@ const Home=(props)=>{
           </div>
         
      
-   </a>
+   </NavLink>
   </div>
 
   </div>
@@ -155,7 +155,7 @@ And it started by late Sh. B.K.Suri, a true karamyogi, visionary and great phila
 
 <span style={{fontWeight:'bolder'}}>GALAXY INFORMATICS (INDIA)</span> was Established in 1987 and got registered in 1988 September after serving the education community for about 40 years and today we manufacture, export , Import  trade wide range of products in the field of <span style={{fontWeight:'bolder'}}>Anthropology, Physiology, Evaluation, Nutrition, Forensic, Healthcare, Medical, Nursing care,  Surgical Devices and other laboratory products.</span><br/>
 </p>
-<a href="/about" style={{textDecoration: 'none'}}>Read more</a>
+<NavLink to="/about" style={{textDecoration: 'none'}}>Read more</NavLink>
 			</div>
 		</div>
 		<div className="site_container" style={{backgroundColor:'rgb(240,240,240)',justifyContent:'space-between',padding:'20px',marginTop:'30px',position: 'relative'}}>
@@ -165,7 +165,7 @@ And it started by late Sh. B.K.Suri, a true karamyogi, visionary and great phila
 			</div>
 			<div className="btnPos text-center " style={{padding:'100px',textAlign:'center',position: 'absolute'
 				,msTransform: 'translateY(-50%)',transform: 'translateY(-50%)',}}>
-				<a href="/contact" className='btn btn-white btn-        animate'>Click Here</a>
+				<NavLink to="/contact" className='btn btn-white btn-        animate'>Click Here</NavLink>
 			</div>	
 		</div>
     <footer className=" bg-light text-center" style={{marginTop:'100px'}}>

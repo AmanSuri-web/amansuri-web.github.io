@@ -9,7 +9,7 @@ function Card2(props){
     <div>
 		<div className="col">
     
-    <a href={`/${props.id}`} className="" style={{margin:'0 auto',
+    <NavLink to={`/${props.id}`} className="" style={{margin:'0 auto',
     display:'',textDecoration: 'none'}}>
     <div className="card " style={{border:'none',width:'',marginTop:'40px'}}>
       <img src={props.imgsrc} className="card-img-top" style={{height:'300px',display: 'block',marginRight:'auto',marginLeft:'auto'}} alt={props.title}/>
@@ -18,7 +18,7 @@ function Card2(props){
          </div>
 
           </div>
-        </a>
+        </NavLink>
      
    
   </div>
