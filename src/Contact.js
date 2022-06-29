@@ -5,7 +5,7 @@ import EmailIcon from '@material-ui/icons/Email';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import Home from './Home.js'
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-
+import { NavLink } from "react-router-dom";
 
 const Contact=()=>{
 	useEffect(() => {
@@ -65,14 +65,28 @@ const Contact=()=>{
 		<div className='site_container' style={{alignItems:'center'}}>
 		<div className='' style={{width:'70%',marginLeft:'auto',marginRight:'auto'}}>
 		<p className='text-center'>
-			SK Suri <br/><br/>
+			<div style={{fontSize:"17px",fontWeight: "bolder"}}>SK Suri </div><br/><br/>
+			<a className="navbar-brand3" onClick={()=> window.open("https://g.co/kgs/FAUR74")}>
      GALAXY INFORMATICS ( INDIA )<br/><br/>
-<span style={{marginLeft:'0px'}}><LocationOnIcon/></span>105, Avinash Mansion , 82/3 Joshi Road<br/>
+     </a>
+     <a>
+     <div className="navbar-brand3" onClick={()=> window.open("https://www.google.com/maps/place/Galaxy+Informatics+India/@28.6531656,77.1877058,15z/data=!4m9!1m2!2m1!1sgalaxy+informatics+india!3m5!1s0x390cfd2a28f441cf:0x23ecdf8abd155b24!8m2!3d28.6535514!4d77.2007762!15sChhnYWxheHkgaW5mb3JtYXRpY3MgaW5kaWGSAQpsYWJvcmF0b3J5", "_blank")}>
+<span  style={{marginLeft:'0px'}}><LocationOnIcon /></span>105, Avinash Mansion , 82/3 Joshi Road<br/>
  Karol Bagh, New Delhi-110005 , India<br/><br/>
+ </div>
+ </a>
+ <div className="navbar-brand3" onClick="window.open('tel:01123554172')">
 <ContactPhoneIcon/>Tel : +91-11-47012788/ 23554172<br/>
+</div>
+<div className="navbar-brand3" onClick="window.open('tel:9968056566')">
 <ContactPhoneIcon/>Tel : +91-9312202557/ 9968056566<br/><br/>
-<EmailIcon/>galaxyinformatics@yahoo.com<br/>
-<EmailIcon/>surisk1968@gmail.com<br/><br/>
+</div>
+
+<div className="navbar-brand3"  onClick={() => window.location = 'mailto:galaxyinformatics@yahoo.com'}>
+<EmailIcon />galaxyinformatics@yahoo.com<br/>
+</div>
+<div className="navbar-brand3" onClick={() => window.location = 'mailto:surisk1968@gmail.com'}>
+<EmailIcon />surisk1968@gmail.com<br/><br/></div>
 		</p>
 <br/><br/><br/>
 		</div>

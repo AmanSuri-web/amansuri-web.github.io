@@ -28,6 +28,15 @@ svg:hover {
 	color: white !important;
 	font-weight: bolder !important;
 }
+.navbar-brand3{
+	font-size:17px !important;
+	color: #66ffff !important;
+	font-weight: bolder !important;
+}
+.navbar-brand3:hover{
+	font-size:18px !important;
+	color: #3498db !important;
+}
 .navbar a{
 	font-size: 1.3rem !important;
 	text-transform: capitalize !important;
