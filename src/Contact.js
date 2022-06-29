@@ -75,13 +75,16 @@ const Contact=()=>{
  Karol Bagh, New Delhi-110005 , India<br/><br/>
  </div>
  </a>
- <div className="navbar-brand3" onClick="window.open('tel:01123554172')">
+ <a href="tel:01123554172">
+ <div className="navbar-brand3" >
 <ContactPhoneIcon/>Tel : +91-11-47012788/ 23554172<br/>
 </div>
-<div className="navbar-brand3" onClick="window.open('tel:9968056566')">
+</a>
+<a href="tel:9968056566">
+<div className="navbar-brand3" >
 <ContactPhoneIcon/>Tel : +91-9312202557/ 9968056566<br/><br/>
 </div>
-
+</a>
 <div className="navbar-brand3"  onClick={() => window.location = 'mailto:galaxyinformatics@yahoo.com'}>
 <EmailIcon />galaxyinformatics@yahoo.com<br/>
 </div>
