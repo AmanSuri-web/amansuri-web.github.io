@@ -33,6 +33,15 @@ svg:hover {
 	color: #66ffff !important;
 	font-weight: bolder !important;
 }
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 .navbar-brand3:hover{
 	font-size:18px !important;
 	color: #3498db !important;

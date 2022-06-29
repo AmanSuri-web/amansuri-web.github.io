@@ -65,6 +65,7 @@ const Contact=()=>{
 		<div className='site_container' style={{alignItems:'center'}}>
 		<div className='' style={{width:'70%',marginLeft:'auto',marginRight:'auto'}}>
 		<p className='text-center'>
+		<h4 className="text-center blink_me">CHECK THESE LINKS</h4><br/>
 			<div style={{fontSize:"17px",fontWeight: "bolder"}}>SK Suri </div><br/><br/>
 			<a className="navbar-brand3" onClick={()=> window.open("https://g.co/kgs/FAUR74")}>
      GALAXY INFORMATICS ( INDIA )<br/><br/>
@@ -100,6 +101,7 @@ const Contact=()=>{
 				<form onSubmit={formSubmit} >
 
 					<div className="">
+					<h4 className="text-center blink_me">WRITE A MESSAGE</h4><br/>
 					<h5 className="text-center">* All fields are required</h5>
   <label for="exampleFormControlInput1" className="form-label">Full Name</label>
   <input type="text" className="form-control" id="exampleFormControlInput1" name="fullname" value={data.fullname} onChange={InputEvent} placeholder="Enter your name"/>
