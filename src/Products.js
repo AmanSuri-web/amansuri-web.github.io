@@ -4,14 +4,14 @@ import Sdata from './Sdata.js'
 import { makeStyles } from '@material-ui/core/styles';
 
 
-import { useHistory ,NavLink} from "react-router-dom";
+import {  NavLink} from "react-router-dom";
 import "./index.css";
 import GetPageList from './GetPageList.js';
 const Products=(props)=>{
 	useEffect(() => {
    document.title = "Our Products"
 }, []);
-	const history = useHistory();
+	
 	const num=props.match.params.page;
 	var x=parseInt(num)+1;
 	

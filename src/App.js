@@ -7,7 +7,7 @@ import '../node_modules/bootstrap/dist/js/bootstrap.js';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap';
-import {Route,Switch,NavLink,useHistory,useLocation} from "react-router-dom"
+import {BrowserRouter,Route,Switch,NavLink,useHistory,useLocation} from "react-router-dom"
 import About from './About.js'
 import Contact from './Contact.js'
 import Home from './Home.js'
@@ -36,6 +36,7 @@ const App=()=>{
 
 	return (
 		<>
+		<BrowserRouter >
 		<ScrollToTop/>
 		<Scroll showBelow={250}/>
 		
@@ -54,7 +55,7 @@ const App=()=>{
 					<Route exact path="/galaxy-env-manage-certificate" component={GalaxyISO}/>
 					<Route exact path="/galaxy-quality-manage-certificate" component={GalaxyISO1}/>
 					<Route exact path="/products-category/medical-surgical/page:page" component={medicalProducts}/>
-					<Route exact path="/products-category/anthropometry-instruments/page:page" component={anthroProducts}/>
+					<Route exact path="/products-category/anthropometry-instruments/page:page"  component={anthroProducts}/>
 					<Route exact path="/products-category/psychology-sports/page:page" component={PSProducts}/>
 					<Route exact path="/products-category/forensic-science/page:page" component={FSProducts}/>
 					<Route exact path="/products-category/healthcare-nutrition/page:page" component={HNProducts}/>
@@ -66,7 +67,7 @@ const App=()=>{
 				</Switch>
 				
 				<Footer  style={{bottom:'0%'}}/>
-				
+				</BrowserRouter>
 		</>
 		)
 }

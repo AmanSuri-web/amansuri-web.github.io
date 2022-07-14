@@ -1,6 +1,6 @@
 import React from 'react'
-import {Route,Switch,NavLink} from "react-router-dom"
-import {useParams,useLocation,useHistory} from "react-router-dom";
+import {NavLink} from "react-router-dom"
+import {useHistory} from "react-router-dom";
 
 const Contact=()=>{
 	const history=useHistory();

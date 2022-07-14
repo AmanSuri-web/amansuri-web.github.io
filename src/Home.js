@@ -1,9 +1,7 @@
-import React,{useState,useEffect} from 'react'
-import background from './backgroundImage.jpg'
+import React,{useEffect} from 'react'
+
 import "./index.css";
-import IconButton from "@material-ui/core/IconButton";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import SearchIcon from "@material-ui/icons/Search";
+
 import { NavLink } from "react-router-dom";
 import Card2 from './Card2.js'
 import Sdata from './Sdata.js'
@@ -20,14 +18,11 @@ import psy from './data/psy.jpg';
 import forensic from './data/forensic.jpg';
 import healthcare from './data/healthcare.jpg';
 import human from './data/human.jpg';
-import Slider from './AutoSlider/Slider.js'
 
-import Footer from './Footer.js'
-import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';   
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 import 'bootstrap';
-import Navigation from './NavBar.js'
+
 import Carousel from './Carousel.js'
 
 
