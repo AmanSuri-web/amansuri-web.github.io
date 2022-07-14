@@ -2,7 +2,7 @@ import React ,{useEffect} from 'react';
 
 import Pagination from './Pagination.js';
 
-const GetPageList = ({num,totalPages,midLength,id}) => {
+const GetPageList = ({num,totalPages,id}) => {
 
   var x=parseInt(num)+1;
   var row=[];
@@ -12,12 +12,17 @@ const GetPageList = ({num,totalPages,midLength,id}) => {
       row.push(i)
     }
   
-
+    
 }
+
 return (<>
+
   {
+  
     row.map((val,ind)=>{
+      
         return(<Pagination num={num} val={val} id={id}/>)
+        
     })
     
     

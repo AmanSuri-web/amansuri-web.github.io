@@ -3,14 +3,11 @@ import emailjs from "emailjs-com"
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
-import Home from './Home.js'
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import { NavLink } from "react-router-dom";
+
 
 const Contact=()=>{
-	useEffect(() => {
-   document.title = "Contact Us"
-}, []);
+	document.title = "Contact Us"
+	
 	const year = new Date().getFullYear();
 	const [data,setData]=useState({
 		fullname : '' ,
@@ -20,9 +17,11 @@ const Contact=()=>{
 	})
 	
 	const InputEvent=(event)=>{
+		
 		const {name,value}=event.target;
 		
 		setData((preVal)=>{
+			
 			return {
 				...preVal ,
 				[name]:value ,

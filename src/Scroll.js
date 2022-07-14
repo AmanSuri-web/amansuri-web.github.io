@@ -22,7 +22,7 @@ const useStyle = makeStyles((theme)=>({
 const Scroll =({showBelow})=>{
 
 	const classes = useStyle();
-	const [show,setShow]=useState(showBelow?false:true)
+	const [show,setShow]=useState(false)
 	const handleScroll=()=>{
 		if(window.pageYOffset>showBelow){
 			if(!show) setShow(true)
@@ -34,7 +34,8 @@ const Scroll =({showBelow})=>{
 	useEffect(()=>{
 		if(showBelow){
 			window.addEventListener(`scroll`,handleScroll)
-			return ()=> window.removeEventListener(`scroll`,handleScroll)
+			return ()=> {
+				window.removeEventListener(`scroll`,handleScroll)}
 		}
 	})
 	const handleClick=()=>{
@@ -43,7 +44,7 @@ const Scroll =({showBelow})=>{
 	return(
 		<div>
 		{show &&
-			<IconButton onClick={handleClick} className={classes.toTop}>
+			<IconButton onClick={handleClick}  className={classes.toTop}>
 			<ExpandLessIcon/>
 			</IconButton>
 		}

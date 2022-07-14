@@ -87,6 +87,7 @@ const useStyles = makeStyles((theme) => ({
 const Navigation=()=>{
 const history = useHistory();
   const num=useLocation().pathname;
+  
 const [c,setc] = useState('true')
 const [a,seta] = useState('true')
 
@@ -96,19 +97,19 @@ useEffect(() => {
     seta(num === "/about"||num=="/contact")
   }, [num]);
 
-	const p = 1;
+	
 
-	const[n, setn]=useState('')
+	const[n, setn]=useState('')//search string
 	const inputEvent=(event)=>{
 		setn(event.target.value);
 		
 	}
-	const [i,seti] = useState('false')
+	
   
 	var list=[];  
 const SearchField=()=>{
-	seti(!i)
-	setn('')
+	
+	setn('')//search clear
 }
 
 
@@ -129,7 +130,9 @@ const render = (word=" ") =>{
 	});
 }
 
-render(n)
+render(n); //form list
+
+
 if(n==''){
 	list=[]
 }
@@ -159,9 +162,13 @@ const [expanded, setExpanded] = useState(false)
 
 
 <Navbar   expand="lg" variant={c?"dark":'light'} className={c?(test?(a?"navbar-custom":"navbar-t"):"navbar-custom"):"navbar-t"} expanded={expanded} onToggle={overrideToggle}>
+
   < NavLink   to="/" onClick={SearchField} className="navbar-brand2"><Logo fill={c?'white':'black'} className="navbar-brand2"/><span className={c ? "navbar-brand2 navbar-brand" : "navbar-brand"} >Galaxy Informatics</span></NavLink>
+
   <Navbar.Toggle  aria-controls="basic-navbar-nav" onClick={navColor}/>
+
   <Navbar.Collapse className={c?"nav-link1 ":''} id="basic-navbar-nav">
+    
     <Nav className={c?"nav-link1 ml-auto":'ml-auto'}  >
     
       <NavLink exact activeClassName={c?"menu_active1":"menu_active"}  className={c?"nav-link1 nav-link":'nav-link'} aria-current="page" to="/" onClick={SearchField}>Home</NavLink>
@@ -207,28 +214,28 @@ const [expanded, setExpanded] = useState(false)
         </ul>
         </div>
         </li>
-      
-    </Nav>
-    <div >
+        <div >
      
-        <div className={classes.search}>
-            <div className={c?'searchIconHome':'searchIconNormal'}>
-              <SearchIcon />
-            </div>
-            <div className={c?'navSearchField1':'navSearchField'}>
-            <InputBase
-            
-            onChange={inputEvent} value={n}
-              placeholder="Search…"
-              classes={{
-                
-                input: classes.inputInput,
-              }}
-              inputProps={{ 'aria-label': 'search' }}
-            />
-            </div>
-          </div>
-        </div>
+     <div className={classes.search}>
+         <div className={c?'searchIconHome':'searchIconNormal'}>
+           <SearchIcon />
+         </div>
+         <div className={c?'navSearchField1':'navSearchField'}>
+         <InputBase
+         
+         onChange={inputEvent} value={n}
+           placeholder="Search…"
+           classes={{
+             
+             input: classes.inputInput,
+           }}
+           inputProps={{ 'aria-label': 'search' }}
+         />
+         </div>
+       </div>
+     </div>
+    </Nav>
+    
 
   </Navbar.Collapse>
 </Navbar>

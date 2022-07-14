@@ -33,7 +33,8 @@ import Carousel from './Carousel.js'
 
 // render
 const year = new Date().getFullYear();
-const Home=(props)=>{
+
+const Home=()=>{
 	useEffect(() => {
    document.title = "Galaxy Informatics"
 }, []);

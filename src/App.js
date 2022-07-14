@@ -36,13 +36,13 @@ const App=()=>{
 
 	return (
 		<>
-		
+		<ScrollToTop/>
 		<Scroll showBelow={250}/>
 		
 	<Navigation/>
 			 
-			 <ScrollToTop>
-				
+			 
+	
 				<Switch>
 					<Route exact path="/" component={Home}/>
 
@@ -64,7 +64,7 @@ const App=()=>{
 					
 					
 				</Switch>
-				</ScrollToTop>
+				
 				<Footer  style={{bottom:'0%'}}/>
 				
 		</>

@@ -1,8 +1,7 @@
 import React ,{useState,useEffect} from 'react'
 import Card from './../Card.js'
 import MS from './Medical&surgical.js'
-import { makeStyles } from '@material-ui/core/styles';
-
+import { makeStyles } from '@material-ui/core/styles'
 
 import { useHistory ,NavLink} from "react-router-dom";
 import "./../index.css";
@@ -12,9 +11,10 @@ const Products=(props)=>{
    document.title = "Medical Products"
 }, []);
 	const history = useHistory();
+	
 	const num=props.match.params.page;
 	var x=parseInt(num)+1;
-	console.log(num)
+	
 	const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
@@ -29,10 +29,7 @@ const Products=(props)=>{
 	const classes = useStyles();
 	
 	const rowsPerPage=12
-	const handleChange=(event,value)=>{
-		
-		history.push(`/products${value}`);
-	}
+	
 	const renderPrevious = () => {
       if (num==1) {
          return (<li class="page-item disabled">

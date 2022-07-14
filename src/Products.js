@@ -29,10 +29,7 @@ const Products=(props)=>{
 	const classes = useStyles();
 	
 	const rowsPerPage=12
-	const handleChange=(event,value)=>{
-		
-		history.push(`/products${value}`);
-	}
+	
 	const renderPrevious = () => {
       if (num==1) {
          return (<li class="page-item disabled">
@@ -73,7 +70,7 @@ const Products=(props)=>{
 		{
   		
   			Sdata
-  			.slice((num-1)*rowsPerPage,num*rowsPerPage)
+  			.slice((num-1)*rowsPerPage,(num*rowsPerPage))
   			.map((val,ind)=>{
   				
   				return (<Card

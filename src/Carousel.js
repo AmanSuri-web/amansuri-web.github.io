@@ -9,14 +9,10 @@ import i4 from './i4.png';
 import i5 from './i5.png';
 
 function ControlledCarousel() {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
+  
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel>
     
       <Carousel.Item interval={2000} >
         <img

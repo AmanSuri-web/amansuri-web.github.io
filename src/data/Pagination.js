@@ -5,7 +5,7 @@ const Pagination = ({num,val,id}) => {
   
 
 
-  var x=parseInt(num)+1;
+  
   
   
   const render0 = () => {
@@ -65,6 +65,7 @@ const Pagination = ({num,val,id}) => {
     
     
     const renderElement=()=>{
+      console.log(val)
    if(val==1)
       return render1()
     else if(val==0)
