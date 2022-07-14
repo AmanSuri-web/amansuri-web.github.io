@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.7cc25690.chunk.css",
-    "main.js": "/static/js/main.cc52a500.chunk.js",
-    "main.js.map": "/static/js/main.cc52a500.chunk.js.map",
+    "main.js": "/static/js/main.e62523a6.chunk.js",
+    "main.js.map": "/static/js/main.e62523a6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.88521322.js",
     "runtime-main.js.map": "/static/js/runtime-main.88521322.js.map",
     "static/css/2.2f9ba80b.chunk.css": "/static/css/2.2f9ba80b.chunk.css",
-    "static/js/2.0a19fea9.chunk.js": "/static/js/2.0a19fea9.chunk.js",
-    "static/js/2.0a19fea9.chunk.js.map": "/static/js/2.0a19fea9.chunk.js.map",
+    "static/js/2.03e4245d.chunk.js": "/static/js/2.03e4245d.chunk.js",
+    "static/js/2.03e4245d.chunk.js.map": "/static/js/2.03e4245d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.2f9ba80b.chunk.css.map": "/static/css/2.2f9ba80b.chunk.css.map",
     "static/css/main.7cc25690.chunk.css.map": "/static/css/main.7cc25690.chunk.css.map",
-    "static/js/2.0a19fea9.chunk.js.LICENSE.txt": "/static/js/2.0a19fea9.chunk.js.LICENSE.txt",
+    "static/js/2.03e4245d.chunk.js.LICENSE.txt": "/static/js/2.03e4245d.chunk.js.LICENSE.txt",
     "static/media/Galaxy CE Certificate products Annexure.4e9283ff.jpg": "/static/media/Galaxy CE Certificate products Annexure.4e9283ff.jpg",
     "static/media/Galaxy CE Certificate.ef81eb7b.jpg": "/static/media/Galaxy CE Certificate.ef81eb7b.jpg",
     "static/media/Galaxy GMP Certificate.7592210d.jpg": "/static/media/Galaxy GMP Certificate.7592210d.jpg",
@@ -255,16 +255,14 @@
     "static/media/i97.392f5b10.jpg": "/static/media/i97.392f5b10.jpg",
     "static/media/i98.da097ed2.jpg": "/static/media/i98.da097ed2.jpg",
     "static/media/i99.7fd2c3a2.jpg": "/static/media/i99.7fd2c3a2.jpg",
-    "static/media/left-arrow.bb288448.svg": "/static/media/left-arrow.bb288448.svg",
     "static/media/medical.6832f6da.jpg": "/static/media/medical.6832f6da.jpg",
-    "static/media/psy.7d6d6746.jpg": "/static/media/psy.7d6d6746.jpg",
-    "static/media/right-arrow.1884d75a.svg": "/static/media/right-arrow.1884d75a.svg"
+    "static/media/psy.7d6d6746.jpg": "/static/media/psy.7d6d6746.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.88521322.js",
     "static/css/2.2f9ba80b.chunk.css",
-    "static/js/2.0a19fea9.chunk.js",
+    "static/js/2.03e4245d.chunk.js",
     "static/css/main.7cc25690.chunk.css",
-    "static/js/main.cc52a500.chunk.js"
+    "static/js/main.e62523a6.chunk.js"
   ]
 }
