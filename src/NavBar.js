@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import "./index.css";
-import { NavLink ,useHistory,useLocation} from "react-router-dom";
+import { NavLink ,useLocation} from "react-router-dom";
 import $ from 'jquery';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 import 'bootstrap';
@@ -85,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Navigation=()=>{
-const history = useHistory();
+
   const num=useLocation().pathname;
   
 const [c,setc] = useState('true')
@@ -171,45 +171,45 @@ const [expanded, setExpanded] = useState(false)
     
     <Nav className={c?"nav-link1 ml-auto":'ml-auto'}  >
     
-      <NavLink exact activeClassName={c?"menu_active1":"menu_active"}  className={c?"nav-link1 nav-link":'nav-link'} aria-current="page" to="/" onClick={SearchField}>Home</NavLink>
+      <NavLink  className={({ isActive }) => (isActive?(c ? "menu_active1 nav-link1 nav-link":"menu_active"):(c?" nav-link1 nav-link":"nav-link "))}   aria-current="page" to="/" onClick={SearchField}>Home</NavLink>
 
         <li>
-    <div class="dropdown">
+    <div className="dropdown">
           <a className={c?"nav-link dropdown-toggle nav-link1":"nav-link dropdown-toggle "} data-toggle="dropdown" href="#">Products</a>
           <ul className={c?(a?"dropdown-menu dropdown-menu3":"dropdown-menu dropdown-menu1"):"dropdown-menu dropdown-menu2"} aria-labelledby="navbarDropdown">
-        <li><NavLink  exact activeClassName={c?"menu_active1":"menu_active"} className={c?"dropdown-item nav-link1":"dropdown-item "} to="/products1" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>All Products</span></NavLink></li>
+        <li><NavLink  className={({ isActive }) => (isActive?(c ? "menu_active1 dropdown-item nav-link1 nav-link":"menu_active nav-link"):(c?"dropdown-item nav-link1 nav-link":"dropdown-item nav-link"))}  to="/products1" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>All Products</span></NavLink></li>
         
-        <li><NavLink exact activeClassName={c?"menu_active1":"menu_active"} className={c?"dropdown-item nav-link1":"dropdown-item "} to="/products-category/medical-surgical/page1" style={{backgroundColor:'none'}} onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Medical & Surgical Products</span></NavLink></li>
+        <li><NavLink className={({ isActive }) => (isActive?(c ? "menu_active1 dropdown-item nav-link1 nav-link":"menu_active nav-link"):(c?"dropdown-item nav-link1 nav-link":"dropdown-item nav-link"))} to="/products-category/medical-surgical/page1" style={{backgroundColor:'none'}} onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Medical & Surgical Products</span></NavLink></li>
         
-        <NavLink exact activeClassName={c?"menu_active1":"menu_active"} className={c?"dropdown-item nav-link1":"dropdown-item "} to="/products-category/anthropometry-instruments/page1" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Anthropometry Instruments</span></NavLink>
+        <NavLink className={({ isActive }) => (isActive?(c ? "menu_active1 dropdown-item nav-link1 nav-link":"menu_active nav-link"):(c?"dropdown-item nav-link1 nav-link":"dropdown-item nav-link"))} to="/products-category/anthropometry-instruments/page1" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Anthropometry Instruments</span></NavLink>
         
-        <NavLink exact activeClassName={c?"menu_active1":"menu_active"} className={c?"dropdown-item nav-link1":"dropdown-item "} to="/products-category/psychology-sports/page1" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Psychology & Sports Science</span></NavLink>
+        <NavLink className={({ isActive }) => (isActive?(c ? "menu_active1 dropdown-item nav-link1 nav-link":"menu_active nav-link"):(c?"dropdown-item nav-link1 nav-link":"dropdown-item nav-link"))} to="/products-category/psychology-sports/page1" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Psychology & Sports Science</span></NavLink>
         
-        <NavLink  exact activeClassName={c?"menu_active1":"menu_active"} className={c?"dropdown-item nav-link1":"dropdown-item "} to="/products-category/forensic-science/page1" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Forensic Science Products</span></NavLink>
+        <NavLink  className={({ isActive }) => (isActive?(c ? "menu_active1 dropdown-item nav-link1 nav-link":"menu_active nav-link"):(c?"dropdown-item nav-link1 nav-link":"dropdown-item nav-link"))} to="/products-category/forensic-science/page1" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Forensic Science Products</span></NavLink>
         
-        <NavLink exact activeClassName={c?"menu_active1":"menu_active"} className={c?"dropdown-item nav-link1":"dropdown-item "} to="/products-category/healthcare-nutrition/page1" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Healthcare & Nutrition Products</span></NavLink>
+        <NavLink className={({ isActive }) => (isActive?(c ? "menu_active1 dropdown-item nav-link1 nav-link":"menu_active nav-link"):(c?"dropdown-item nav-link1 nav-link":"dropdown-item nav-link"))} to="/products-category/healthcare-nutrition/page1" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Healthcare & Nutrition Products</span></NavLink>
         
-        <NavLink exact activeClassName={c?"menu_active1":"menu_active"} className={c?"dropdown-item nav-link1":"dropdown-item "} to="/products-category/human-anatomy-models/page1" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Human Anatomy Models & Charts</span></NavLink>
+        <NavLink className={({ isActive }) => (isActive?(c ? "menu_active1 dropdown-item nav-link1 nav-link":"menu_active nav-link"):(c?"dropdown-item nav-link1 nav-link":"dropdown-item nav-link"))} to="/products-category/human-anatomy-models/page1" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Human Anatomy Models & Charts</span></NavLink>
         </ul>
         </div>
         </li>
         
-      <NavLink exact activeClassName={c?"menu_active1":"menu_active"} className={c?"nav-link1 nav-link":'nav-link'} aria-current="page" to="/about" onClick={SearchField}>About Us</NavLink>
-      <NavLink exact activeClassName={c?"menu_active1":"menu_active"} className={c?"nav-link1 nav-link":'nav-link'} aria-current="page" to="/contact" onClick={SearchField}>Contact Us</NavLink>
+      <NavLink className={({ isActive }) => (isActive?(c ? "menu_active1 nav-link1 nav-link":"menu_active"):(c?" nav-link1 nav-link":"nav-link "))} aria-current="page" to="/about" onClick={SearchField}>About Us</NavLink>
+      <NavLink className={({ isActive }) => (isActive?(c ? "menu_active1 nav-link1 nav-link":"menu_active"):(c?" nav-link1 nav-link":"nav-link "))} aria-current="page" to="/contact" onClick={SearchField}>Contact Us</NavLink>
 
       <li >
-          <div class="dropdown">
+          <div className="dropdown">
           <a className={c?"nav-link dropdown-toggle nav-link1":"nav-link dropdown-toggle "} data-toggle="dropdown" href="#">Certificates</a>
           <ul className={c?(test?(a?"dropdown-menu dropdown-menu3 certiDropDown":"dropdown-menu dropdown-menu1 certiDropDown"):"dropdown-menu dropdown-menu1"):(test?"dropdown-menu dropdown-menu2 certiDropDown":"dropdown-menu dropdown-menu2")} aria-labelledby="navbarDropdown" style={{backgroundColor:'black'}}>
       
       
-        <li><NavLink exact activeClassName={c?"menu_active1":"menu_active"} className={c?"dropdown-item nav-link1":"dropdown-item "} to="/galaxy-env-manage-certificate" style={{fontSize:'10px'}} onClick={SearchField}><span style={{fontSize:'17px',opacity:'1'}}>Galaxy Quality Management Certificate</span></NavLink></li>
+        <li><NavLink className={({ isActive }) => (isActive?(c ? "menu_active1 dropdown-item nav-link1 nav-link":"menu_active nav-link"):(c?"dropdown-item nav-link1 nav-link":"dropdown-item nav-link"))}  to="/galaxy-env-manage-certificate" style={{fontSize:'10px'}} onClick={SearchField}><span style={{fontSize:'17px',opacity:'1'}}>Galaxy Quality Management Certificate</span></NavLink></li>
         
-        <li><NavLink exact activeClassName={c?"menu_active1":"menu_active"} className={c?"dropdown-item nav-link1":"dropdown-item "} to="galaxy-quality-manage-certificate" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Galaxy Environmental Management Certificate</span></NavLink></li>
+        <li><NavLink className={({ isActive }) => (isActive?(c ? "menu_active1 dropdown-item nav-link1 nav-link":"menu_active nav-link"):(c?"dropdown-item nav-link1 nav-link":"dropdown-item nav-link"))}  to="galaxy-quality-manage-certificate" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Galaxy Environmental Management Certificate</span></NavLink></li>
         
-        <li><NavLink exact activeClassName={c?"menu_active1":"menu_active"} className={c?"dropdown-item nav-link1":"dropdown-item "} to="/galaxy-gmp-certificate" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Galaxy GMP Certificate</span></NavLink></li>
+        <li><NavLink className={({ isActive }) => (isActive?(c ? "menu_active1 dropdown-item nav-link1 nav-link":"menu_active nav-link"):(c?"dropdown-item nav-link1 nav-link":"dropdown-item nav-link"))}  to="/galaxy-gmp-certificate" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Galaxy GMP Certificate</span></NavLink></li>
         
-        <li><NavLink exact activeClassName={c?"menu_active1":"menu_active"} className={c?"dropdown-item nav-link1":"dropdown-item "} to="/galaxy-ce-certificate" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Galaxy CE Certificate</span></NavLink></li>
+        <li><NavLink className={({ isActive }) => (isActive?(c ? "menu_active1 dropdown-item nav-link1 nav-link":"menu_active nav-link"):(c?"dropdown-item nav-link1 nav-link":"dropdown-item nav-link"))} to="/galaxy-ce-certificate" onClick={SearchField}><span style={{fontSize:'17px',backgroundColor:'transparent'}}>Galaxy CE Certificate</span></NavLink></li>
        
         </ul>
         </div>

@@ -4,15 +4,16 @@ import HumanAnatomy from './HumanAnatomy.js'
 import { makeStyles } from '@material-ui/core/styles';
 
 
-import { useHistory ,NavLink} from "react-router-dom";
+import { useParams ,NavLink} from "react-router-dom";
 import "./../index.css";
 import GetPageList from './GetPageList.js';
 const Products=(props)=>{
 	useEffect(() => {
    document.title = "Human Anatomy Products"
 }, []);
-	const history = useHistory();
-	const num=props.match.params.page;
+	
+	const { page } = useParams();
+  const num = page;
 	var x=parseInt(num)+1;
 	console.log(num)
 	const useStyles = makeStyles((theme) => ({
@@ -29,10 +30,7 @@ const Products=(props)=>{
 	const classes = useStyles();
 	
 	const rowsPerPage=12
-	const handleChange=(event,value)=>{
-		
-		history.push(`/products${value}`);
-	}
+	
 	
 	
 

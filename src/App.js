@@ -1,13 +1,11 @@
-import React,{useState,createContext,useEffect} from 'react';
+import React from 'react';
 import "./index.css";
-import CompA from "./CompA.js"
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.js';
 
-import $ from 'jquery';
-import Popper from 'popper.js';
+
 import 'bootstrap';
-import {BrowserRouter,Route,Switch,NavLink,useHistory,useLocation} from "react-router-dom"
+import {BrowserRouter,Route,Routes} from "react-router-dom"
 import About from './About.js'
 import Contact from './Contact.js'
 import Home from './Home.js'
@@ -20,17 +18,15 @@ import GalaxyCE from './certificates/GalaxyCE.js'
 import GalaxyGMP from './certificates/GalaxyGMP.js'
 import GalaxyISO from './certificates/GalaxyISO.js'
 import GalaxyISO1 from './certificates/GalaxyISO1.js'
-import medicalProducts from './data/medicalProducts.js'
-import anthroProducts from './data/anthroProducts.js'
+import MProducts from './data/medicalProducts.js'
+import AnProducts from './data/anthroProducts.js'
 import PSProducts from './data/psychologySports.js'
 import FSProducts from './data/forensicScience.js'
 import HNProducts from './data/healthcareProducts.js'
 import HAProducts from './data/humanAnatomyProducts.js'
 import Scroll from './Scroll.js';
 import ScrollToTop from './ScrollToTop.js';
-const Name=()=>{
-	return (<h1>This is Name page</h1> );
-}
+
 
 const App=()=>{
 
@@ -44,27 +40,29 @@ const App=()=>{
 			 
 			 
 	
-				<Switch>
-					<Route exact path="/" component={Home}/>
+				<Routes>
+					<Route  path="/" element={<Home/>}/>
 
-					<Route exact path="/products:page" component={Products}/>
-					<Route exact path="/about" component={About}/>
-					<Route exact path="/contact" component={Contact}/>
-					<Route exact path="/galaxy-ce-certificate" component={GalaxyCE}/>
-					<Route exact path="/galaxy-gmp-certificate" component={GalaxyGMP}/>
-					<Route exact path="/galaxy-env-manage-certificate" component={GalaxyISO}/>
-					<Route exact path="/galaxy-quality-manage-certificate" component={GalaxyISO1}/>
-					<Route exact path="/products-category/medical-surgical/page:page" component={medicalProducts}/>
-					<Route exact path="/products-category/anthropometry-instruments/page:page"  component={anthroProducts}/>
-					<Route exact path="/products-category/psychology-sports/page:page" component={PSProducts}/>
-					<Route exact path="/products-category/forensic-science/page:page" component={FSProducts}/>
-					<Route exact path="/products-category/healthcare-nutrition/page:page" component={HNProducts}/>
-					<Route exact path="/products-category/human-anatomy-models/page:page" component={HAProducts}/>
-					<Route  path="/products/:id" component={ProductDetails}/>
-					<Route path="*" component={Error}/>
+					<Route  path="/products:page" element={<Products/>}/>
+					<Route  path="/about" element={<About/>}/>
+					<Route  path="/contact" element={<Contact/>}/>
+					<Route  path="/galaxy-ce-certificate" element={<GalaxyCE/>}/>
+					<Route  path="/galaxy-gmp-certificate" element={<GalaxyGMP/>}/>
+					<Route  path="/galaxy-env-manage-certificate" element={<GalaxyISO/>}/>
+					<Route  path="/galaxy-quality-manage-certificate" element={<GalaxyISO1/>}/>
+					<Route  path="/products-category/medical-surgical/page:page" element={<MProducts/>}/>
+					
+					<Route  path="/products-category/anthropometry-instruments/page:page"  element={<AnProducts/>}/>
+					
+					<Route  path="/products-category/psychology-sports/page:page" element={<PSProducts/>}/>
+					<Route  path="/products-category/forensic-science/page:page" element={<FSProducts/>}/>
+					<Route  path="/products-category/healthcare-nutrition/page:page" element={<HNProducts/>}/>
+					<Route  path="/products-category/human-anatomy-models/page:page" element={<HAProducts/>}/>
+					<Route  path="/products/:id" element={<ProductDetails/>}/>
+					<Route path="*" element={<Error/>}/>
 					
 					
-				</Switch>
+				</Routes>
 				
 				<Footer  style={{bottom:'0%'}}/>
 				</BrowserRouter>

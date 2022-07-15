@@ -1,12 +1,14 @@
 import React,{useEffect} from 'react';
 import "./index.css";
-import { NavLink } from "react-router-dom";
+import { NavLink,useParams } from "react-router-dom";
 import Sdata from './Sdata.js'
 import "./index.css";
 function ProductDetails(props){
   
   
-  const num=props.match.params.id;
+  const { id } = useParams();
+  const num = id;
+  
   const t=Sdata[num].title;
   useEffect(() => {
    document.title = t
@@ -41,7 +43,7 @@ function ProductDetails(props){
   
       
       <div style={{padding:'10px'}}>
-        <h5 class="card-title">{Sdata[num].title}</h5>
+        <h5 className="card-title">{Sdata[num].title}</h5>
         
         
         <p className="display-linebreak">{Sdata[num].sname}</p>

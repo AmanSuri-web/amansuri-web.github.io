@@ -119,8 +119,8 @@ const Contact=()=>{
   </label>
   <textarea className="form-control" id="exampleFormControlTextarea1" name="message" value={data.message} onChange={InputEvent}  rows="3"></textarea>
 </div>
-<div class="col-12">
-    <button class="btn btn-outline-primary" type="submit" >Submit form</button>
+<div className="col-12">
+    <button className="btn btn-outline-primary" type="submit" >Submit form</button>
   </div>
 				</form>
 				</div>

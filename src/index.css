@@ -58,11 +58,13 @@ svg:hover {
 	font-weight: bold !important;
 	border-bottom: 1px solid white !important;
 }
+
 .menu_active{
 	
 	font-weight: bold !important;
 	border-bottom: 1px solid #565387 !important;
 }
+
 .login-dark form .form-control {
   background:none;
   
@@ -75,6 +77,8 @@ svg:hover {
 .navbar-brand:hover{
 	color: #3498db !important;
 }
+
+
 .navbar-brand2:hover{
 	color: #3498db !important;
 }

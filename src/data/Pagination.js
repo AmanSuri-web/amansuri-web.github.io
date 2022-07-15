@@ -10,56 +10,56 @@ const Pagination = ({num,val,id}) => {
   
   const render0 = () => {
        
-        return (<li class="page-item disabled"><a class="page-link" href="/">...</a></li>)
+        return (<li className="page-item disabled"><a className="page-link" href="/">...</a></li>)
       
     }
     const render1 = () => {
       if (num==1) {
-         return (<li class="page-item active" ><li class="page-item"><NavLink class="page-link" to={{pathname:`/products-category/${id}/page1`}}>1</NavLink></li></li>)
+         return (<li className="page-item active" ><li className="page-item"><NavLink className="page-link" to={{pathname:`/products-category/${id}/page1`}}>1</NavLink></li></li>)
       } else {
-        return (<li class="page-item"><NavLink class="page-link" to={{pathname:`/products-category/${id}/page1`}}>1</NavLink></li>)
+        return (<li className="page-item"><NavLink className="page-link" to={{pathname:`/products-category/${id}/page1`}}>1</NavLink></li>)
       }
     }
     const render2 = () => {
       if (num==2) {
-         return (<li class="page-item active" ><li class="page-item"><NavLink class="page-link" to={{pathname:`/products-category/${id}/page2`}}>2</NavLink></li></li>)
+         return (<li className="page-item active" ><li className="page-item"><NavLink className="page-link" to={{pathname:`/products-category/${id}/page2`}}>2</NavLink></li></li>)
       } else {
-        return (<li class="page-item"><NavLink class="page-link" to={{pathname:`/products-category/${id}/page2`}}>2</NavLink></li>)
+        return (<li className="page-item"><NavLink className="page-link" to={{pathname:`/products-category/${id}/page2`}}>2</NavLink></li>)
       }
     }
     const render3 = () => {
       if (num==3) {
-         return (<li class="page-item active" ><li class="page-item"><NavLink class="page-link" to={{pathname:`/products-category/${id}/page3`}}>3</NavLink></li></li>)
+         return (<li className="page-item active" ><li className="page-item"><NavLink className="page-link" to={{pathname:`/products-category/${id}/page3`}}>3</NavLink></li></li>)
       } else {
-        return (<li class="page-item"><NavLink class="page-link" to={{pathname:`/products-category/${id}/page3`}}>3</NavLink></li>)
+        return (<li className="page-item"><NavLink className="page-link" to={{pathname:`/products-category/${id}/page3`}}>3</NavLink></li>)
       }
     }
     const render4 = () => {
       if (num==4) {
-         return (<li class="page-item active" ><li class="page-item"><NavLink class="page-link" to={{pathname:`/products-category/${id}/page4`}}>4</NavLink></li></li>)
+         return (<li className="page-item active" ><li className="page-item"><NavLink className="page-link" to={{pathname:`/products-category/${id}/page4`}}>4</NavLink></li></li>)
       } else {
-        return (<li class="page-item"><NavLink class="page-link" to={{pathname:`/products-category/${id}/page4`}}>4</NavLink></li>)
+        return (<li className="page-item"><NavLink className="page-link" to={{pathname:`/products-category/${id}/page4`}}>4</NavLink></li>)
       }
     }
     const render5 = () => {
       if (num==5) {
-         return (<li class="page-item active" ><li class="page-item"><NavLink class="page-link" to={{pathname:`/products-category/${id}/page5`}}>5</NavLink></li></li>)
+         return (<li className="page-item active" ><li className="page-item"><NavLink className="page-link" to={{pathname:`/products-category/${id}/page5`}}>5</NavLink></li></li>)
       } else {
-        return (<li class="page-item"><NavLink class="page-link" to={{pathname:`/products-category/${id}/page5`}}>5</NavLink></li>)
+        return (<li className="page-item"><NavLink className="page-link" to={{pathname:`/products-category/${id}/page5`}}>5</NavLink></li>)
       }
     }
     const render6 = () => {
       if (num==6) {
-         return (<li class="page-item active" ><li class="page-item"><NavLink class="page-link" to={{pathname:`/products-category/${id}/page6`}}>6</NavLink></li></li>)
+         return (<li className="page-item active" ><li className="page-item"><NavLink className="page-link" to={{pathname:`/products-category/${id}/page6`}}>6</NavLink></li></li>)
       } else {
-        return (<li class="page-item"><NavLink class="page-link" to={{pathname:`/products-category/${id}/page6`}}>6</NavLink></li>)
+        return (<li className="page-item"><NavLink className="page-link" to={{pathname:`/products-category/${id}/page6`}}>6</NavLink></li>)
       }
     }
     const render7 = () => {
       if (num==7) {
-         return (<li class="page-item active" ><li class="page-item"><NavLink class="page-link" to={{pathname:`/products-category/${id}/page7`}}>7</NavLink></li></li>)
+         return (<li className="page-item active" ><li className="page-item"><NavLink className="page-link" to={{pathname:`/products-category/${id}/page7`}}>7</NavLink></li></li>)
       } else {
-        return (<li class="page-item"><NavLink class="page-link" to={{pathname:`/products-category/${id}/page7`}}>7</NavLink></li>)
+        return (<li className="page-item"><NavLink className="page-link" to={{pathname:`/products-category/${id}/page7`}}>7</NavLink></li>)
       }
     }
     

@@ -4,15 +4,16 @@ import Sdata from './Sdata.js'
 import { makeStyles } from '@material-ui/core/styles';
 
 
-import {  NavLink} from "react-router-dom";
+import {  NavLink,useParams} from "react-router-dom";
 import "./index.css";
 import GetPageList from './GetPageList.js';
 const Products=(props)=>{
 	useEffect(() => {
    document.title = "Our Products"
 }, []);
-	
-	const num=props.match.params.page;
+	console.log(props.match);
+	const { page } = useParams();
+  const num = page;
 	var x=parseInt(num)+1;
 	
 	const useStyles = makeStyles((theme) => ({
@@ -32,21 +33,21 @@ const Products=(props)=>{
 	
 	const renderPrevious = () => {
       if (num==1) {
-         return (<li class="page-item disabled">
-      <NavLink class="page-link" to={{pathname:`/products${num-1}`}} tabindex="-1" aria-disabled="true">Previous</NavLink>
+         return (<li className="page-item disabled">
+      <NavLink className="page-link" to={{pathname:`/products${num-1}`}} tabindex="-1" aria-disabled="true">Previous</NavLink>
     </li>)
       } else {
-        return (<li class="page-item ">
-      <NavLink class="page-link" to={{pathname:`/products${num-1}`}} tabindex="-1" aria-disabled="true">Previous</NavLink>
+        return (<li className="page-item ">
+      <NavLink className="page-link" to={{pathname:`/products${num-1}`}} tabindex="-1" aria-disabled="true">Previous</NavLink>
     </li>)
       }
     }
     const renderNext = () => {
       if (num<28) {
-         return (<NavLink class="page-link" to={{pathname:`/products${x}`}}>Next</NavLink>)
+         return (<NavLink className="page-link" to={{pathname:`/products${x}`}}>Next</NavLink>)
       } else {
-        return (<li class="page-item disabled">
-        <NavLink class="page-link" to={{pathname:`/products${x}`}}>Next</NavLink></li>)
+        return (<li className="page-item disabled">
+        <NavLink className="page-link" to={{pathname:`/products${x}`}}>Next</NavLink></li>)
       }
     }
 		
@@ -97,7 +98,7 @@ const Products=(props)=>{
 
   <GetPageList num={num} totalPages={28} midLength={2}/>
 	
-	<li class="page-item">
+	<li className="page-item">
       {renderNext()}
     </li>
   </ul>
@@ -108,7 +109,7 @@ const Products=(props)=>{
 
   <GetPageList num={num} totalPages={28} midLength={2}/>
 	
-	<li class="page-item">
+	<li className="page-item">
       {renderNext()}
     </li>
   </ul>
